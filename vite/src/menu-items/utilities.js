@@ -1,13 +1,18 @@
 // assets
-import { IconTypography, IconPalette, IconShadow, IconWindmill } from '@tabler/icons-react';
+import { IconTypography, IconPalette, IconShadow, IconWindmill,IconBook,IconBrandGithub,IconListCheck  } from '@tabler/icons-react';
+
 
 // constant
 const icons = {
   IconTypography,
   IconPalette,
   IconShadow,
-  IconWindmill
+  IconWindmill,
+  IconBook, // Add the book icon here
+  IconBrandGithub,
+  IconListCheck,
 };
+
 
 // ==============================|| UTILITIES MENU ITEMS ||============================== //
 
@@ -25,6 +30,22 @@ const utilities = {
       breadcrumbs: false
     },
     {
+      id: 'util-Contact',
+      title: 'Contact',
+      type: 'item',
+      url: '/utils/util-contact',
+      icon:icons.IconBook ,
+      breadcrumbs: false
+    },
+    {
+      id: 'util-Integration',
+      title: 'Integration',
+      type: 'item',
+      url: '/utils/util-Integration',
+      icon: icons.IconBrandGithub,
+      breadcrumbs: false
+    },
+    {
       id: 'util-color',
       title: 'Color',
       type: 'item',
@@ -39,7 +60,15 @@ const utilities = {
       url: '/utils/util-shadow',
       icon: icons.IconShadow,
       breadcrumbs: false
-    }
+    },
+    {
+      id: 'util-Form',
+      title: 'Form',
+      type: 'item',
+      url: '/utils/util-Form',
+      icon: icons.IconListCheck,
+      breadcrumbs: false
+    },
   ]
 };
 

@@ -1,0 +1,1 @@
+import{j as a,M as t,T as s}from"./index-CWK7PSNF.js";import"./vendor-Bfi0LCKY.js";const i=()=>a.jsx(t,{title:"Sample Card",children:a.jsx(s,{variant:"body2",children:"this is test."})});export{i as default};

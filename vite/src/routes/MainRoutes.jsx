@@ -11,6 +11,9 @@ const DashboardDefault = Loadable(lazy(() => import('views/dashboard')));
 const UtilsTypography = Loadable(lazy(() => import('views/utilities/Typography')));
 const UtilsColor = Loadable(lazy(() => import('views/utilities/Color')));
 const UtilsShadow = Loadable(lazy(() => import('views/utilities/Shadow')));
+const UtilsContact = Loadable(lazy(() => import('views/utilities/Contact')));
+const UtilsIntegration = Loadable(lazy(() => import('views/utilities/Integration')));
+const UtilsForm = Loadable(lazy(() => import('views/utilities/Form')));
 // const UtilsMaterialIcons = Loadable(lazy(() => import('views/utilities/MaterialIcons')));
 // const UtilsTablerIcons = Loadable(lazy(() => import('views/utilities/TablerIcons')));
 
@@ -42,6 +45,33 @@ const MainRoutes = {
         {
           path: 'util-typography',
           element: <UtilsTypography />
+        }
+      ]
+    },
+    {
+      path: 'utils',
+      children: [
+        {
+          path: 'util-contact',
+          element: <UtilsContact />
+        }
+      ]
+    },
+    {
+      path: 'utils',
+      children: [
+        {
+          path: 'util-integration',
+          element: <UtilsIntegration />
+        }
+      ]
+    },
+    {
+      path: 'utils',
+      children: [
+        {
+          path: 'util-form',
+          element: <UtilsForm />
         }
       ]
     },
